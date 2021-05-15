@@ -35,15 +35,6 @@ function storage($url = '')
     return UPLOAD_F . $url;
 }
 
-/**
- * Membuat function untuk directory temporar base path /temporar/
- * @author nagara 
- * @return string
- */
-function temp_dir($url = '')
-{
-    return TEMP_F . $url;
-}
 
 
 /**
@@ -219,6 +210,11 @@ function model($model = '')
     require_once dirname(__DIR__,1) . "/model/" . $model . ".php";
 }
 
+
+/**
+ * membuat function panggil controller
+ * @author nagara
+ */
 function controller($controller = '')
 {
     require_once dirname(__DIR__,1) . "/controller/" . $controller . ".php";

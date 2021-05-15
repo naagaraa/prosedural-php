@@ -5,7 +5,6 @@
 
     // call function
     title();
-    message();
 ?>
 
 <!DOCTYPE html>
@@ -18,5 +17,11 @@
 </head>
 <body>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quibusdam quia voluptate iste voluptates soluta consequatur quae ducimus perferendis blanditiis amet, aliquam alias nam doloribus! Tempora quidem deserunt animi excepturi.</p>
+
+    <ul>
+        <li><a href="<?= url() ?>">Home</a></li>
+        <li><a href="<?= url("info") ?>">Info php</a></li>
+        <li><a href="https://github.com/naagaraa/prosedural-php">Documentations</a></li>
+    </ul>
 </body>
 </html>

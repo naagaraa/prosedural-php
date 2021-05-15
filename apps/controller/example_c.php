@@ -17,7 +17,7 @@
  */
 function title()
 {
-   $title = 'home';
+   $title = 'home page';
    echo $title;
 }
 
