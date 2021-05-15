@@ -7,6 +7,11 @@ $router->get('/', function() {
     // call view
     view("welcome");
 });
+
+$router->get('dashboard', function() {
+    // call view
+    view("backend.home");
+});
 $router->get('info', function() {
     phpinfo();
 });

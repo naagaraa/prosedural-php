@@ -198,7 +198,8 @@ function random_file_name($keyname = '')
  */
 function view($view = '', $data = [])
 {
-    require_once dirname(__DIR__,1) . "/view/" . $view . ".php";
+    $views = str_replace(".","/", $view);
+    require_once dirname(__DIR__,1) . "/view/" . $views . ".php";
 }
 
 /**
