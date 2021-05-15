@@ -1,6 +1,38 @@
 {
+    "name": "nagara/prosedural-php",
+    "description": "PROSEDURAL PHP  PROJECT",
+    "homepage": "https://github.com/naagaraa/prosedural-php",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "framework",
+        "native",
+        "php",
+        "prosedural"
+    ],
+    "authors": [
+        {
+            "name": "nagara",
+            "email": "ekabersinar@gmail.com",
+            "role": "developer"
+        }
+    ],
     "require": {
         "bramus/router": "~1.5",
         "vlucas/phpdotenv": "^5.3"
-    }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "apcu-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/naagaraa/prosedural-php"
+        }
+    ]
 }
