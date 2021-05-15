@@ -40,3 +40,12 @@ function get_single_data_by_condition($id)
     $result = $conn->query($sql);
     return $result->fetch_object();
 }
+
+function example_data(){
+    $data = [
+        "user" => "nagara",
+        "hobbi" => "lazy and sleep"
+    ];
+
+   var_dump($data);
+}

@@ -7,4 +7,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 
 
 # untuk membuat pretty url menghilangkan index.php?url=$url
-RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteRule ^(.*)$ index.php?url=$1 [L]

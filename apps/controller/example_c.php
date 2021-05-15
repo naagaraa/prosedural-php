@@ -23,7 +23,12 @@ function title()
 
  function message()
  {
-    echo 'hi, this name nagara i am from indonesia';
+   //  call model
+   model("example_m");
+
+   // call function
+   example_data();
+
  }
 
 

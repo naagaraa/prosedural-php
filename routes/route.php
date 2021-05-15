@@ -5,7 +5,8 @@ $router = new \Bramus\Router\Router();
 
 // Define routes
 $router->get('/', function() {
-    echo "root";
+    // call view
+    view("welcome");
 });
 $router->get('hello', function() {
     echo 'Hello ' ;

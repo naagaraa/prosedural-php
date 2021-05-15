@@ -207,27 +207,7 @@ function random_file_name($keyname = '')
  */
 function view($view = '', $data = [])
 {
-    // mengarah pada folder apps/views/ namaviews.php
-    try {
-        if (!file_exists(_ROOT_VIEW . $view . '.php')) {
-            throw new Exception("View " . $view . " Not Found. Check Controllernya Bro");
-        } else {
-
-            # comment this jika tidak ingin menggunakan twig engine
-            // $loader = new \Twig\Loader\FilesystemLoader(_ROOT_VIEW);
-            // $twig = new \Twig\Environment($loader, ['debug' => true]);
-
-            // echo $twig->render($view . '.php' , $data);
-
-            # uncomment this jika tidak ingin menggunakan twig engine
-            require_once _ROOT_VIEW . $view . '.php';  //update template engine menggunakan twig
-        }
-        return false;
-    } catch (Exception $exception) {
-        $my_error = new Error_Handling;
-        $my_error->showerror_message($exception->getMessage(), $exception->getFile(), $exception->getLine(), $exception->getTraceAsString());
-        exit;
-    }
+    require_once dirname(__DIR__,1) . "/view/" . $view . ".php";
 }
 
 /**
@@ -236,19 +216,12 @@ function view($view = '', $data = [])
  */
 function model($model = '')
 {
-    // mengarah pada folder apps/models/ namamodels.php
-    try {
-        if (!file_exists(_ROOT_MODEL . $model . '.php')) {
-            throw new Exception("Models " . $model . " Not Found. Check Controllernya Bro di bagian load modelnya ");
-        }
+    require_once dirname(__DIR__,1) . "/model/" . $model . ".php";
+}
 
-        require_once _ROOT_MODEL . $model . '.php';
-        return new $model;
-    } catch (Exception $exception) {
-        $my_error = new Error_Handling;
-        $my_error->showerror_message($exception->getMessage(), $exception->getFile(), $exception->getLine(), $exception->getTraceAsString());
-        exit;
-    }
+function controller($controller = '')
+{
+    require_once dirname(__DIR__,1) . "/controller/" . $controller . ".php";
 }
 
 
