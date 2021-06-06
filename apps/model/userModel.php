@@ -1,28 +1,39 @@
 <?php
 /**
- * Documentation
+ * ----------------------------------------------------------------------------------------------------------------------------------------
+ * Documentation Model
  * @author nagara
+ * @return function
+ * ----------------------------------------------------------------------------------------------------------------------------------------
  * 
- * fetch_object return object untuk single
- * fetch_assoc return array untuk single
+ * pada view tidak perlu melakukan memanggil connection lagi cukup paggil controller saja, karena semua aktifitas
+ * yang berkaitan dengan logic di definisikan ke dalam function yang di tulis pada controller pada view
+ * cukup paggil function yang terdapat pada berkas controllernya
  * 
- * fetch_all(MYSQLI_ASSOC) return all untk array
+ * cheatsheet untuk fecth database : 
  * 
+ * untuk single result :
+ * fetch_object return object 
+ * fetch_assoc return array 
+ * 
+ * untuk all result :
+ * fetch_all(MYSQLI_ASSOC) return all row
  */
 
- /**
-  * docuemntations return set data 
- * @return array
- */
+
 
 function get_all_data()
 {
+    # call connection ke database
     $conn = database();
     
-    // sintac query 
+    # query sintax pada database
     $sql = "SELECT * FROM transactions";
     
+    # myqli execute
     $result = $conn->query($sql);
+
+    #return data
     return $result->fetch_all(MYSQLI_ASSOC);
 }
 
@@ -33,10 +44,10 @@ function get_all_data()
 
 function get_single_data_by_condition($id)
 {
-    global $conn;
+    $conn = database();
 
     // sintac query 
-    $sql = "SELECT * FROM tb_user WHERE id=$id ";
+    $sql = "SELECT * FROM users WHERE id=$id ";
     $result = $conn->query($sql);
     return $result->fetch_object();
 }

@@ -1,25 +1,16 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
-    'name' => '__root__',
+    'reference' => '229232786b2419861d9bda7c3bcb86cc24ac3b10',
+    'name' => 'nagara/prosedural-php',
   ),
   'versions' => 
   array (
-    '__root__' => 
-    array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => NULL,
-    ),
     'bramus/router' => 
     array (
       'pretty_version' => '1.5',
@@ -37,6 +28,15 @@
       array (
       ),
       'reference' => '7e279d2cd5d7fbb156ce46daada972355cea27bb',
+    ),
+    'nagara/prosedural-php' => 
+    array (
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '229232786b2419861d9bda7c3bcb86cc24ac3b10',
     ),
     'phpoption/phpoption' => 
     array (
@@ -73,6 +73,15 @@
       array (
       ),
       'reference' => 'dc3063ba22c2a1fd2f45ed856374d79114998f91',
+    ),
+    'symfony/var-dumper' => 
+    array (
+      'pretty_version' => 'v5.3.0',
+      'version' => '5.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1d3953e627fe4b5f6df503f356b6545ada6351f3',
     ),
     'vlucas/phpdotenv' => 
     array (

@@ -1,45 +1,32 @@
 <?php
 /**
- * Documentention 
+ * ----------------------------------------------------------------------------------------------------------------------------------------
+ * Documentation Controller
  * @author nagara
- * if u have have function prosedural write this
+ * @return function
+ * ----------------------------------------------------------------------------------------------------------------------------------------
  * 
- * in give u example two example :
- * 1. working with function
- * 2. working with datadatabase resul but i give example in array
- *    all result it same
+ * pada controller setiap hal di tulis ke dalam sebuat function function yang di dalam functionnya dapat berinteraksi dengan database
+ * untuk lebih lengkapnya bisa check documentasi nya di github atau gitbook . functional programing pada umumnnya
+ * sama dengan penulisan function biasa yang dapat menerima parameter.
  * 
- * write one function and call at view;
  */
 
 /**
+ * mencetak string title
  * @return string
  */
 function title()
 {
    $title = 'home page';
-   echo $title;
+   return $title;
 }
 
- function message()
- {
-   //  call model
-   model("userModel");
-
-   // call function model
-   return get_all_data();
-
- }
-
-
- function bookdata()
- {
-     $data = [
-         'id' => 1,
-         'title' => 'komik',
-         'price' => '10k',
-     ];
-
-    return $data;
-
- }
+/**
+ * mencetak nilai string deskripsi
+ * @return string
+ */
+function deskripsi()
+{
+  $deskripsi = "halaman home page";
+}
