@@ -1,8 +1,7 @@
 <?php
-
 /**
  * Documentation
- * @author
+ * @author nagara
  * 
  * fetch_object return object untuk single
  * fetch_assoc return array untuk single
@@ -18,10 +17,11 @@
 
 function get_all_data()
 {
-    global $conn;
-
-     // sintac query 
-    $sql = "SELECT * FROM tb_user ";
+    $conn = database();
+    
+    // sintac query 
+    $sql = "SELECT * FROM transactions";
+    
     $result = $conn->query($sql);
     return $result->fetch_all(MYSQLI_ASSOC);
 }

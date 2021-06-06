@@ -24,10 +24,10 @@ function title()
  function message()
  {
    //  call model
-   model("example_m");
+   model("userModel");
 
-   // call function
-   example_data();
+   // call function model
+   return get_all_data();
 
  }
 

@@ -1,4 +1,12 @@
 <?php
+/**
+ * Documentation
+ * @author nagara
+ * 
+ * pada routing hanya memanggil view saja, controller dan model dilakukan pada file view
+ * 
+ */
+
 // Create Router instance
 $router = new \Bramus\Router\Router();
 
@@ -13,7 +21,7 @@ $router->get('dashboard', function() {
     view("backend.home");
 });
 $router->get('info', function() {
-    phpinfo();
+    phpinfo(INFO_GENERAL);
 });
 $router->get('about', function() {
     echo 'about ' ;

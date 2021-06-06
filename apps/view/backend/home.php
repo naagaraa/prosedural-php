@@ -8,5 +8,6 @@
 </head>
 <body>
     <h2>admin page</h2>
+    <p><a href="<?= url() ?>">back to home</a></p>
 </body>
 </html>

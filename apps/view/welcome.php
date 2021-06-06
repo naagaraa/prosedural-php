@@ -1,7 +1,6 @@
 <?php 
     // call controller 
-    controller("example_c");
-
+    controller("welcomeController");
 
     // call function
     title();
@@ -20,6 +19,7 @@
 
     <ul>
         <li><a href="<?= url() ?>">Home</a></li>
+        <li><a href="<?= url("dashboard") ?>">Dashboard</a></li>
         <li><a href="<?= url("info") ?>">Info php</a></li>
         <li><a href="https://github.com/naagaraa/prosedural-php">Documentations</a></li>
     </ul>

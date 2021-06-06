@@ -1,3 +1,5 @@
+<IfModule mod_rewrite.c>
+
 Options -Multiviews
 
 RewriteEngine On
@@ -8,3 +10,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 
 # untuk membuat pretty url menghilangkan index.php?url=$url
 RewriteRule ^(.*)$ index.php?url=$1 [L]
+
+# config akses denied untuk Files
+<Files ".env">  
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+</IfModule>
