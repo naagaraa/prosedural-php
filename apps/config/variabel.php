@@ -22,5 +22,5 @@ define('BASEURL', $configuration['APP_HOST'] . $configuration['APP_NAME'] . '/')
 
 define('UPLOAD_F', $_SERVER['DOCUMENT_ROOT'] . '/' . $_ENV['APP_NAME'] . '/storage/');
 
-define('ASSET', $system["ASSET"] 	        = "http://" . $_SERVER['HTTP_HOST'] . '/public/');
+define('ASSET', "http://" . $_SERVER['HTTP_HOST'] . '/' . $configuration['APP_NAME'] . '/public/');
 
