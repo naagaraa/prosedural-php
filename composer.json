@@ -32,6 +32,11 @@
         "directory": "dist",
         "skip-dev": false
     },
+    "scripts": {
+        "post-create-project-cmd": [
+            "cp .env.example .env"
+        ]
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
