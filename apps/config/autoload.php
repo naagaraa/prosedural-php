@@ -1,19 +1,29 @@
 <?php
-/**
- * ----------------------------------------------------------------------------------------
- * Documentation
- * ----------------------------------------------------------------------------------------
- * untuk membuat auto require file pada folder config dengan memanfaatkan build in 
- * function pada php yaitu scandir dna is_dir dan dilakuikan loop sebanyak
- * jumlah array atau file pada dir tersebut
- * 
- * @author nagara
- * @return function
+ /** 
+ *------------------------------------------------------------------------------------------------------
+ * Autoload
+ * @author nagara 
+ *------------------------------------------------------------------------------------------------------
+ *
+ * untuk memanggil berkas autoloading atau require_once secara otomatis membaca file di dalam directory config
  */
+
+
+/**
+ * call directory chid
+ * @return function
+ * 
+ */
+ 
 function directory($dir){
     directory_children($dir);
 }
 
+/**
+ * call directory 
+ * @return function
+ * 
+ */
 function directory_children($dir){
     $dirPath = realpath($dir) . DIRECTORY_SEPARATOR;
     $scanDir =  scandir($dirPath); // read directory bro
@@ -38,7 +48,11 @@ function directory_children($dir){
 
 }
 
-// load direactory
+/**
+ * load file at direcotry
+ * @return function
+ * 
+ */
 function load_dir_config($files)
 {
     require_once $files;

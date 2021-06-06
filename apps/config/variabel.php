@@ -1,9 +1,11 @@
 <?php
-/**
- * Documentations 
- * @author nagara
- * IF you have define constant write this code
- * 
+ /** 
+ *------------------------------------------------------------------------------------------------------
+ * Variabel
+ * @author nagara 
+ * @return Constant
+ *------------------------------------------------------------------------------------------------------
+ *
  */
 
 $configuration = [

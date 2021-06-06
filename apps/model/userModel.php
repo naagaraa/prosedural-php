@@ -58,5 +58,5 @@ function example_data(){
         "hobbi" => "lazy and sleep"
     ];
 
-   var_dump($data);
+   dump($data);
 }

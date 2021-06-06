@@ -1,4 +1,20 @@
 <?php
+ /** 
+ *------------------------------------------------------------------------------------------------------
+ * FUNCTION BUILD IN
+ * @author nagara 
+ * @return function
+ *------------------------------------------------------------------------------------------------------
+ *
+ */
+
+
+
+/**
+ * Membuat function untuk show url 
+ * @author nagara 
+ * @return string
+ */ 
 function url($url = '')
 {
     return URL . $url;

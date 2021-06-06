@@ -1,7 +1,6 @@
 <?php
-// load controllernya
+# load controllernya
 controller("loginController");
-
 ?>
 
 <!DOCTYPE html>

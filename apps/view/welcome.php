@@ -10,6 +10,8 @@
  * yang berkaitan dengan logic di definisikan ke dalam function yang di tulis pada controller pada view
  * cukup paggil function yang terdapat pada berkas controllernya
  */
+
+ # load controller
 controller("welcomeController");
 ?>
 

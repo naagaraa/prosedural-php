@@ -1,11 +1,13 @@
 <?php
-/**
- * Documentation
- * @author nagara
- * config database wrapper useing mysqli object dont change this code but if error dont worry, 
- * cause u can config apps name and database in file .env or envirotment variabel
+ /** 
+ *------------------------------------------------------------------------------------------------------
+ * Database
+ * @author nagara 
+ * @return connection database
+ *------------------------------------------------------------------------------------------------------
+ * 
+ * melakukan connection ke database
  */
-
 
 
 /**
@@ -27,7 +29,7 @@ function database()
     $driver->report_mode = MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ERROR;
     mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
 
-    // / Create connection
+    // Create connection
     try {
         $conn = new mysqli($config_db['db_host'], $config_db['db_user'], $config_db['db_password'], $config_db['db_name']) or die('try again in some minutes, please');
         
