@@ -1,0 +1,18 @@
+# Ignore everything in this directory
+*/storage
+
+# Except this file
+!.gitignore
+composer.lock
+.env
+
+# folder vendor
+.github/*
+/vendor/*
+.env/*
+.github/*
+
+# folder example tidak perlu di add ke git jika diinginka un-comment baris ini
+# /example/*
+
+# file envirotment variabel
