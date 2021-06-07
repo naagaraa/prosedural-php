@@ -19,7 +19,7 @@ $router->get('/', function() {
 });
 
 $router->get('login', function() {
-    view("auth/login");
+    view("auth/pages/login");
 });
 
 
