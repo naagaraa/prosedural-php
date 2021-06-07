@@ -13,6 +13,8 @@
 
  # load controller
 controller("welcomeController");
+
+
 ?>
 
 <!DOCTYPE html>
