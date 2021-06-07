@@ -34,7 +34,7 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "cp .env.example .env"
+            "php includes/script/generate.php"
         ]
     },
     "minimum-stability": "dev",
